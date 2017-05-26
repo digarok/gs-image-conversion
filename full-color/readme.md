@@ -12,8 +12,8 @@ To approximate it here, we use imagemagick to perform the following conversion s
 - for each line: 
   - remove two channels (Green,Blue) to get remaining channel (Red)
   - reduce that channel to a 16 color, 12 bit, dithered image
-  - recombine the 67 * 3 images into single 320x201 image
-  - crop to 320x200, effectively dropping the last Blue line since we start with RGB at the top
+- recombine the 67 * 3 images into single 320x201 image
+- crop to 320x200, effectively dropping the last Blue line since we start with RGB at the top
 
 ## Prerequisite
 You must have imagemagick installed.  To see if it's installed, open a command line and type `convert`
