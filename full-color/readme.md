@@ -19,12 +19,17 @@ To approximate it here, we use imagemagick to perform the following conversion s
 You must have imagemagick installed.  To see if it's installed, open a command line and type `convert`
 
 If you need to install it, for Mac OSX, I'd suggest `brew`:
+
 ```$ brew install imagemagick```
 
+
 Linux - RHEL/CentOS
+
 ```$ sudo yum install ImageMagick```
 
+
 Linux - Debian/Ubuntu
+
 ```$ sudo apt-get install imagemagick```
 
 ## Running the script to build an image
@@ -35,6 +40,7 @@ Basically you can just run the `slicer.sh` script against any image that imagema
 ## Running the test suite
 
 From the parent directory (the one this readme file is in), run the test script:
+
 ```$ ./tests/run_1.sh```
 
 Output will be generated in the **out/** directory.
