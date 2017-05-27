@@ -21,7 +21,7 @@ do
     filebasenoext=${filebase%%.*}
     dither=Riemersma
     dither=FloydSteinberg
-    convert -colors 16 -depth 12 -dither $dither $file $OUTDIR/$filebasenoext.band16.png
+    convert -colors 16 -depth 4 -dither $dither $file $OUTDIR/$filebasenoext.band16.png
 done
 
 convert -append $OUTDIR/$IMAGEBASENOEXT*band16* $OUTBASE/$IMAGEBASENOEXT-FINAL.png
